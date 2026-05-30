@@ -80,15 +80,3 @@ strava-ai-assistant/
 ├── .env.example
 └── README.md
 ```
-
-## Token Refresh
-
-Strava access tokens expire after 6 hours. To refresh:
-- Re-run `python get_token.py`
-- Or implement the refresh token flow using your `refresh_token`
-
-## Notes
-
-- Free Anthropic tier is sufficient for typical usage
-- The app loads activities once per session; click "Connect" again to refresh
-- Chat history is maintained within a session but not persisted across restarts
